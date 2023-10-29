@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.content {
+  padding: 20px;
+  display: inline-block; /* Display cards inline */
+  vertical-align: top; /* Align cards to the top */
+  flex-shrink: 0;
+}
+.chart-container {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start; 
+  margin-left: 9rem; 
+  padding-right: 100px; 
+}
+
+
+
+.navbar {
+  background-color: #0f0f0f;
+  border-radius: 10px;
+}
+
+.navbar-nav {
+  color: #ffffff; 
+}
+
+.navbar-nav .nav-link {
+  
+  color: #ffffff !important; 
+}
+.navbar-nav .nav-link:hover {
+  padding-left: 1rem;
+  background-color: rgb(209, 126, 210);
+  border-radius: 10px;
+  
+  font-weight: bolder;
+}
+
+.card {
+  background: rgb(137, 46, 132);
+  width: 270px;
+  height: 250px;
+  margin-right: 10px;
+  color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: inline-block; /* Display cards inline */
+  vertical-align: top; /* Align cards to the top */
+  flex-shrink: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start; /* Start a new row when necessary */
+  padding: 10px; /* Add padding to the container */
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        width: calc(50% - 20px); 
+    }
+}
+.card-image {
+  background-color: laqua;
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px;
+}
+.card p {
+  padding: 10px;
+}
+.card:hover {
+  transform: scale(1.03);
+}
