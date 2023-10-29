@@ -229,7 +229,7 @@ function count(values, row) {
         const card = document.createElement('div');
         card.classList.add('card');
         
-        const backgroundImageURL = dataRow[3].replace("open?", "uc?export=view&");
+        const backgroundImageURL = dataRow[3].replace('open?id=', 'uc?id=');
         
         const cardImageDiv = document.createElement('div');
         cardImageDiv.classList.add('card-image');
